@@ -24,7 +24,7 @@ This project leverages various machine learning models, such as XGBoost, Random 
 
 The application uses a dataset with customer information to train and test models. The data includes various customer attributes such as age, gender, tenure, product details, and account balance.
 
-- **Source**: [Churn Dataset](churn.csv)
+- **Source**: [Churn Dataset](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers)
 
 ---
 
