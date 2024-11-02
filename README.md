@@ -7,11 +7,8 @@ This project is a machine learning application built to predict customer churn f
 ## Table of Contents
 - [Overview](#overview)
 - [Dataset](#dataset)
-- [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Demo](#demo)
 - [Results](#results)
 - [License](#license)
 
@@ -31,57 +28,13 @@ The application uses a dataset with customer information to train and test model
 
 ---
 
-## Project Structure
-
-```
-├── data
-│   └── churn.csv                     # Raw dataset file
-├── models
-│   └── xgboost_model.pkl             # Saved XGBoost model (and others)
-├── notebooks
-│   └── EDA.ipynb                     # Exploratory Data Analysis
-├── app
-│   ├── templates
-│   │   └── index.html                # HTML for web interface
-│   └── app.py                        # Flask app code
-├── images
-│   └── churn_probabilities.png       # Visualization images
-├── README.md                         # This README file
-└── requirements.txt                  # Python dependencies
-```
-
----
-
 ## Technologies Used
 
-- **Python**: Pandas, NumPy, Scikit-Learn, XGBoost
+- **Python**: Pandas, Scikit-Learn, XGBoost
 - **Machine Learning Models**: Random Forest, Decision Tree, XGBoost, Naive Bayes, Logistic Regression, Support Vector Classification
-- **Flask**: For building the web application
+- **Replit & Streamlit**: For building the web application
 - **Llama3**: To generate customized emails for customers based on churn predictions
-- **Matplotlib**: For data visualization
-
----
-
-## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/churn-prediction-app.git
-   cd churn-prediction-app
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download or prepare the dataset**  
-   Ensure the `churn.csv` file is in the `data` folder.
-
-4. **Run the application**
-   ```bash
-   python app/app.py
-   ```
+- **Matplotlib & Seaborn**: For data visualization
 
 ---
 
@@ -91,16 +44,6 @@ The application uses a dataset with customer information to train and test model
 2. **Model Training**: Train various models and save the best-performing model (XGBoost) for the final application.
 3. **Web App**: Open the app in a browser to view churn predictions and email summaries for customers.
 4. **Email Generation**: Llama3 is used to generate personalized emails for each customer, explaining the churn analysis and offering solutions.
-
----
-
-## Demo
-
-### Example Predictions
-![Churn Probabilities](images/churn_probabilities.png)
-
-### Custom Email Generation
-![Customer Email Example](images/customer_email_example.png)
 
 ---
 
